@@ -1,3 +1,9 @@
-<p>
-  profile works!
-</p>
+<div *ngIf="profile">
+   <div class="panel panel-default">
+     <div class="panel-heading">
+       {{profile.name}}<small>{{profile.login}}</small>
+      <span *ngIf="profile.company"> , studies at {{profile.company}}</span>
+      
+     </div>
+   </div>
+</div>
