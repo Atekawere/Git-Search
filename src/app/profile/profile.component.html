@@ -23,12 +23,23 @@
            <div>
              <p>
                <span class="label label-default">{{profile.followers}}Followers</span>
-               <span class="label label-default">Following {{profile.followings}}</span>
-               <span class="label label-default">{{profile.public_gists}} public 
+               <span class="label label-danger">Following {{profile.followings}}</span>
+               <span class="label label-success">{{profile.public_gists}} public 
                  gists</span>
                <span class="label label-default">{{profile.public_repos}} public 
                  Repos</span>
              </p>
+             <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-danger btn sm" >view profile on github</a></p>
+             <div class="panel panel-default">
+               <div class="panel-heading">
+                 <h3 class="panel-title">Repos</h3>
+               </div>
+               <div class="panel" ngFor="let repo of repos">
+                 <p>
+                   {{repo.name}}
+                 </p>
+               </div>
+             </div>
            </div>
          </div>
        </div>  
