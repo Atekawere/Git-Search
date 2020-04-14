@@ -1,4 +1,9 @@
 
+.pol{
+    background-color: aqua;
+    background-position: fixed;
+    background-size: cover;
+}
 .searchform{
     padding-top: 50px;
 
