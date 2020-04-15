@@ -2,4 +2,6 @@
 body{
     background-color: aqua;
     background-image: url(https://bit.ly/2RG8DBo);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
